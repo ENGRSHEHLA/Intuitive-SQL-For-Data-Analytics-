@@ -1,3 +1,3 @@
 SELECT * 
 FROM my_db.characters 
-WHERE is_alive = "true"
+WHERE is_alive = "true"ode 
