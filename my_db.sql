@@ -1,2 +1,1 @@
-SELECT NOT false //1
-SELECT NOT true //0
+SELECT true AND true //1
