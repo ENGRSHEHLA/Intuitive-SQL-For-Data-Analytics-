@@ -1,1 +1,4 @@
-SELECT true AND true //1
+/*operators AND, NOT, OR*/
+
+/*SELECT true AND false*/
+SELECT true OR falseAN 
