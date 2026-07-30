@@ -1,1 +1,1 @@
-SELECT NOT(true AND NOT false OR false AND(true OR true) AND true) OR (true AND (FALSE and true))
+SELECT DISTINCT class FROM my_db.characters
