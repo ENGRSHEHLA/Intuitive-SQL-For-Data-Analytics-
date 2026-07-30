@@ -1,1 +1,1 @@
-SELECT DISTINCT class FROM my_db.characters
+SELECT  DISTINCT class, guild FROM my_db.characters ORDER BY class, guild
