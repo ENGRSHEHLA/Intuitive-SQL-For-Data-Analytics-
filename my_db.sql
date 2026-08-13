@@ -1,5 +1,5 @@
 SELECT * FROM my_db.characters_alive
 
-UNION DISTINCT/UNION ALL
+INTERSECT DISTINCT
 
 SELECT * FROM my_db.characters_dead;
