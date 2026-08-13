@@ -1,10 +1,5 @@
-CREATE TABLE my_db.characters_alive
-AS
-SELECT *
-FROM  my_db.characters WHERE is_alive = true;
+SELECT * FROM my_db.characters_alive
 
-CREATE TABLE my_db.characters_dead
-AS
-SELECT *
-FROM  my_db.characters WHERE is_alive = false
-;
+UNION DISTINCT/UNION ALL
+
+SELECT * FROM my_db.characters_dead;
