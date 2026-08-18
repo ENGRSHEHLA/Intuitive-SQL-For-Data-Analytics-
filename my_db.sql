@@ -1,5 +1,5 @@
-SELECT * FROM my_db.characters_alive
+SELECT name FROM my_db.characters
 
-INTERSECT DISTINCT
+UNION DISTINCT
 
-SELECT * FROM my_db.characters_dead;
+SELECT name FROM my_db.items;
