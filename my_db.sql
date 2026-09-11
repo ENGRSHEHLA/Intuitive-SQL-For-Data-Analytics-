@@ -1,2 +1,3 @@
-SELECT name, class, level / experience *2 AS result
- FROM my_db.characters order by 2,1 ;
+--Flag (level >= 20 AS new_level)
+SELECT name, level, level>= 20 AS new_level
+ FROM my_db.characters WHERE is_alive = true ;
