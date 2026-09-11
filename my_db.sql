@@ -1,3 +1,5 @@
-SELECT sum(level), avg(level), min(level), max(level) AS max_level, COUNT(level),
-max(experience / level *2)  AS max_exp
+
+-- In PostgreSQL STRING_AGG(class, ",")
+
+SELECT count(class), min(class), max(class),GROUP_CONCAT(class SEPARATOR '!')
 FROM my_db.characters
