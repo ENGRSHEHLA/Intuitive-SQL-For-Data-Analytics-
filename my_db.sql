@@ -1,7 +1,7 @@
-SELECT id, name, item_type, power, date_added,rarity
-FROM my_db.items
+-- Ascending order
+SELECT*
 
-UNION DISTINCT
-
-SELECT id, name, class, level, last_active, CAST(experience AS char)
- FROM my_db.characters;
+ FROM my_db.characters ORDER By level ASC;
+ -- Descending order
+SELECT*
+ FROM my_db.characters ORDER By level DESC;
