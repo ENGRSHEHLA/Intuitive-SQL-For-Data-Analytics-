@@ -1,5 +1,5 @@
- SELECT chars.name AS character_name, mentors.name AS mentor_name 
- FROM my_db.characters chars
+ SELECT c.name, c.experience /100, i.name, i.power
+ FROM my_db.characters c
  JOIN 
- my_db.characters mentors
- ON chars.mentor_id = mentors.id
+ my_db.items i
+ ON c.experience /100 >= i.power 
