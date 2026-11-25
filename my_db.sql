@@ -1,5 +1,5 @@
- SELECT c.name, c.experience /100, i.name, i.power
+ SELECT c.id, c.name, i.item_id, i.quantity
  FROM my_db.characters c
- JOIN 
- my_db.items i
- ON c.experience /100 >= i.power 
+ LEFT JOIN 
+ my_db.inventory i
+ ON c.id = i.character_id
